@@ -1,0 +1,18 @@
+# per-video work and outputs (kept local only)
+videos/
+
+# large / re-creatable by ./setup.sh
+.venv/
+tts/
+geo/
+
+# secrets
+.env
+
+# macOS / Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# original zips (contain the old prompt with the Unsplash key)
+_originals/
