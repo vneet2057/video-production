@@ -16,3 +16,6 @@ __pycache__/
 
 # original zips (contain the old prompt with the Unsplash key)
 _originals/
+
+# channel analytics exports (private)
+insights/

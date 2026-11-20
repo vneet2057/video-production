@@ -53,9 +53,33 @@
 - **TikTok:** it hasn't taken off like Facebook (every video stays at ~150–600 views, i.e. TikTok's first test batch). Its audience is younger and prefers fast cuts and faces. **We keep posting the same videos to TikTok and do NOT change the style for it now.** Later, when we decide it's needed (not today or tomorrow), we may make a separate faster "TikTok cut". Don't change the format for TikTok unless I ask.
 - **YouTube:** added because its viewers skew older, news explainers do well in search, and videos keep getting views for months. Monetization: 1,000 subscribers + 4,000 watch hours (12 months) or 10M Shorts views (90 days); from 1 Feb 2027 new applicants need 8,000 hours or 20M Shorts views. A weekly longer video (8–10 min) built from our slides is the faster route to watch hours, when I ask for it.
 
+## 1c. Facebook insights review (27 Oct – 19 Nov 2026) and decisions of 20 November 2026
+
+Data: 42 Reels, export in `insights/facebook/` (kept local, not in git). Median 3-second views per video:
+
+| Period | Videos | Median views | Avg watch | Note |
+|---|---|---|---|---|
+| 27 Oct – 3 Nov | 16 | 85 | 6.0 s | |
+| 4 – 9 Nov | 7 | 1,474 | 11.6 s | US election / Trump spike: Congress 8,353 · Trump admits 5,559 · Freezer hack 2,794 |
+| 10 – 19 Nov | 19 | 98 | 8.3 s | back to baseline; one breakout on 13 Nov (3,349) |
+
+What we found:
+- **Views didn't collapse, the spike ended.** Baseline is ~100 views per video; breakouts come from big US/Trump news.
+- **Every Reel since 10 Nov was posted with NO title.** Facebook uses title + description to decide who sees a video. **Always fill in the title AND description** from the posting pack.
+- **Audience drifted away from our earners:** 55+ share 69% → 51%, US share 53% → 36% (more India / Malaysia / Philippines) when topics were Ukraine-, Iran-only or Asia-focused.
+- **Posting bursts hurt:** 6 Reels on 15 Nov and 5 on 19 Nov, some 8–30 min apart; 99% of views come from recommendations (1% followers), so bunched posts compete for the same test audience.
+- **Timing:** every breakout landed in US daytime (e.g. 23:22 Nepal → 5,559; 03:49 → 3,349; 00:07 → 1,474); Nepal-morning posts (09:15/09:23 = 10:30 pm US Eastern) got ~90 views.
+- **Retention:** since 10 Nov ~59% leave by 10 s and only 15% reach 30 s (22% in the spike) → fast style (§7c) and hooks under 2 s.
+- **Not the cause:** 1080p export (the drop began 10 Nov; our 1080p kit exports started 19 Nov; the best video was a heavy file). `Audience.pdf` shows the ad account's potential audience in Nepal, not real viewers: ignore it.
+
+Decisions (20 Nov 2026):
+- **Posting schedule:** I schedule every Reel for **18:00–03:00 Nepal time** (= 7:15 am – 4:15 pm US Eastern). **Max 1–2 Reels a day, at least 4–6 h apart** (e.g. ~19:00 and ~00:00). Never 07:00–12:00 Nepal time (US late night). When a video is finished, tell me the next slot.
+- **Audience: stay US/Western.** Facebook pays per view by viewer country; US/CA/UK/AU views pay several times more than India/SE Asia, and our breakouts were US-centred. **Prefer stories with a clear US/Trump angle** and name the person in the hook; Asia-only stories rank lower when choosing topics. Asian viewers are a bonus, not the target (a separate page/TikTok for Asia only later, if ever).
+- **Re-check insights weekly:** I export new insights into `insights/facebook/`; compare with this table.
+
 ## 2. The workflow (do it in this order)
 
-1. **Find topics** (if I ask): search today's news (last 24 hrs), then rank **10 stories** by TikTok/Facebook potential: keep wars on the list, but include elections, cyber, tech/AI, human stories, disasters and other world news. For each: one-line summary, why it gets views, a hook idea. Recommend one or two. Flag sensitive or graphic ones, and ones only one source reports. Skip anything I've already covered.
+1. **Find topics** (if I ask): search today's news (last 24 hrs), then rank **10 stories** by TikTok/Facebook potential, **favouring a clear US/Trump angle (§1c)**: keep wars on the list, but include elections, cyber, tech/AI, human stories, disasters and other world news. For each: one-line summary, why it gets views, a hook idea. Recommend one or two. Flag sensitive or graphic ones, and ones only one source reports. Skip anything I've already covered.
 2. **Research the chosen story**: search first, always. Read at least 2–3 sources. Build a dated timeline. Note where sources **disagree** (dates, numbers) and don't state a number that sources conflict on. Present unverified claims as claims ("Iran says…", "America says that's false").
 3. **Write the narration**: one short paragraph per scene, ~10 scenes (see §4 and §7c). Start a folder with `./new-video.sh topic-slug`.
 4. **Generate the voice** with Kokoro (§6): `narrate.py` times every sentence (`work/sentences.json`). Set `ANIMS` here only.
@@ -749,6 +773,8 @@ Caption template:
 ```
 
 ### Facebook (Page, Reels)
+- **Always fill in the Title field and the description** (19 Reels in a row went out without a title, §1c).
+- **Schedule** for 18:00–03:00 Nepal time, max 1–2 a day, 4–6 h apart (§1c).
 - Post the **same clean MP4** (no TikTok watermark) as a Reel on the **Page** the same day.
 - Facebook asks for a **title + description**: title = keyword + hook (under ~60 characters); description = 2–3 sentence summary, a question, the sources, the stock-photo credit line, then 3–5 hashtags.
 - Turn on Facebook's **AI-generated** label too.

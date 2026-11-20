@@ -26,7 +26,9 @@ This folder makes short vertical news explainer videos (1080x1920, 61–66 s, AI
 - Narration: no dotted abbreviations ("United States", not "U.S."), numbers as words.
 - Fast style: ~10 scenes, reveals timed to the voice, motion everywhere, burned-in captions, SFX (MASTER-PROMPT §7c).
 - Deliver: `-1080p` + `-720p` (report sizes + bitrates), cover JPG, `posting-pack.md`; open the 1080p in QuickTime Player. Recommend uploading the 1080p.
-- Posting text in chat: per platform, each field in its own code block (copyable).
+- Posting text in chat: per platform, each field in its own code block (copyable). Remind: fill the Facebook **Title** field too.
+- Schedule: user schedules every Reel for **18:00–03:00 Nepal time** (US daytime), max 1–2/day, 4–6 h apart; tell them the next slot (`date` = Nepal time).
+- Topics: prefer a clear US/Trump angle (US/Western viewers earn most); Asia-only stories rank lower (MASTER-PROMPT §1c).
 
 ## Running on this Mac (set up and tested 19 Nov 2026)
 - Setup is done; `./setup.sh` re-checks/repairs it (Homebrew ffmpeg + espeak-ng + font-inter, `.venv/`, Kokoro model in `tts/`, country outlines in `geo/wgj/`).
