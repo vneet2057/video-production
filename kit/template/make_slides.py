@@ -119,8 +119,12 @@ p{font-size:40px;line-height:1.35}
 """
 
 
-def trk(n):
-    return '<div class="trk"><span>' + f"{n} / 4" + "</span>" + "".join(f'<i class="{"on" if k <= n else ""}"></i>' for k in range(1, 5)) + "</div>"
+TOTAL = 4   # how many items the list has ("1 / 4"...); change per video
+
+
+def trk(n, total=None):
+    total = total or TOTAL
+    return '<div class="trk"><span>' + f"{n} / {total}" + "</span>" + "".join(f'<i class="{"on" if k <= n else ""}"></i>' for k in range(1, total + 1)) + "</div>"
 
 
 BODY = f"""

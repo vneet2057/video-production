@@ -97,6 +97,8 @@ Decisions (20 Nov 2026):
 
 - **Hook first, always, and win the first 2 seconds** (our biggest drop-off is at 0:02):
   - First spoken line **under 2 seconds**, 4–7 words, naming a person/place + result: "Trump just lost Congress." / "Hackers turned freezers into ovens."
+  - **Open with an urgent news-creator opener** (since 22 Nov 2026, the user's choice: the style of popular TikTok news explainers). A short opener of 1–3 words, then the fact, together still about 2 s: "Breaking news. Trump wants a permanent Iran deal." / "This is big. Iran just fired at a US base." / "The world is watching. ..." / "This has to stop. ..." (only when everyone agrees on it, e.g. scams, malware). Optional closing tease: "And nobody knows what happens next." Stay neutral on politics and wars: no "this is good news" or "this has to be stopped" about a side's policy; use those only where the facts aren't disputed. The opener also goes in the on-screen badge (e.g. a red "BREAKING" chip).
+  - Captions **never sit on top of photos**: keep a plain-background band for them (see memory and §7c).
   - **Something is already moving at frame 0** (counter ticking, map moving, dots flipping). A busy still chart at frame 0 loses people.
   - The on-screen headline matches the hook word for word and is fully visible at frame 0 (many people scroll with the sound off).
   - The key fact lands in the **first 10 seconds**; then explain.

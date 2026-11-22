@@ -20,6 +20,8 @@ This folder makes short vertical news explainer videos (1080x1920, 61–66 s, AI
 
 ## Non-negotiables (summary; details in MASTER-PROMPT)
 - Hook line under 2 s, motion and headline visible at frame 0. Key fact in first 10 s.
+- Open with a short urgent opener before the fact ("Breaking news." / "This is big." / "The world is watching.") plus a red BREAKING chip on screen. Keep it neutral on politics and wars (MASTER-PROMPT §3).
+- Captions never sit on top of photos: keep a plain-background band for them and check frames before export.
 - Neutral on politics/wars; explain the basics; never invent numbers or quotes.
 - Label every image honestly. No graphic violence.
 - No "Part N". End with "Let's see what happens. Follow for more."
